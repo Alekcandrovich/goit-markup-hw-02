@@ -1,4 +1,14 @@
+:root{
+  --general-color: #212121;
+  --last-color: #757575;
+  --link-color: #2196f3;
+  --general-background: #FFFFFF;
+  --slogan-background: #2F303A;
+}
+
+
 body {
+  background-color: var(--general-background);
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
@@ -15,23 +25,57 @@ body {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  text-decoration: none;
+  color: var(--link-color);
 }
 .logo {
   font-family: 'Raleway';
   color: #000000;
 }
 /* Menu Nav */
-.Menu-Nav {
-position: absolute;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
+.nav {
+  position: absolute;
+  width: 281px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
-
-/* (поінтери) */
-.pointer {
-  
+.nav-ul {
+  list-style: none;
+}
+.nav-li {
+  float: left;
+  padding: 0 10px;
+}
+.decor-studiya {
+  text-decoration: none;
+  color: var(--link-color);
+}
+.decor-contakt {
+  text-decoration: none;
+  color: var(--general-color);
+}
+.contakt{
+  list-style: none;
+  position: absolute;
+  width: 300px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.contakt-li{
+  float: left;
+  padding: 0 10px;
 }
