@@ -2,6 +2,7 @@
   --general-color: #212121;
   --last-color: #757575;
   --link-color: #2196f3;
+  --slogan-color: #ffffff;
   --general-background: #FFFFFF;
   --slogan-background: #2F303A;
 }
@@ -9,10 +10,12 @@
 
 body {
   background-color: var(--general-background);
+  color: var(--general-color);
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
-/* identical to box height */
+
+/* logotip */
 .logo-color {
   position: absolute;
   width: 145px;
@@ -32,7 +35,8 @@ body {
   font-family: 'Raleway';
   color: #000000;
 }
-/* Menu Nav */
+
+/* menu nav */
 .nav {
   position: absolute;
   width: 281px;
@@ -53,15 +57,24 @@ body {
   float: left;
   padding: 0 10px;
 }
-.decor-studiya {
-  text-decoration: none;
+.nav-li :hover,
+.nav-li :focus {
   color: var(--link-color);
 }
-.decor-contakt {
+.nav-li .current {
+  color: var(--link-color);
+}
+.decor-studiya {
   text-decoration: none;
   color: var(--general-color);
 }
-.contakt{
+.decor-portfoliocontakt {
+  text-decoration: none;
+  color: var(--general-color);
+}
+
+/* menu contakt */
+.contakt {
   list-style: none;
   position: absolute;
   width: 300px;
@@ -75,7 +88,19 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.contakt-li{
+.contakt-li {
   float: left;
   padding: 0 10px;
+}
+.contakt-li :hover,
+.contakt-li :focus {
+  color: var(--link-color);
+}
+.decor-email {
+  text-decoration: none;
+  color: var(--last-color);
+}
+.decor-phone {
+  text-decoration: none;
+  color: var(--last-color);
 }
