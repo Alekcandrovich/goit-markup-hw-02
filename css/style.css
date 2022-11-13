@@ -1,22 +1,23 @@
 :root{
-  --general-color: #212121;
-  --last-color: #757575;
-  --link-color: #2196f3;
-  --slogan-color: #ffffff;
-  --general-background: #FFFFFF;
-  --slogan-background: #2F303A;
+  --background-general: #FFFFFF;
+  --background-slogan: #2F303A;
+  --color-logo: #000000;
+  --color-general: #212121;
+  --color-last: #757575;
+  --color-link: #2196f3;
+  --color-slogan: #ffffff;
 }
 
 
 body {
-  background-color: var(--general-background);
-  color: var(--general-color);
+  background-color: var(--background-general);
+  color: var(--gcolor-general);
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
 
 /* logotip */
-.logo-color {
+.logo-color-up {
   position: absolute;
   width: 145px;
   height: 31px;
@@ -29,78 +30,86 @@ body {
   line-height: 31px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--color-link);
 }
-.logo {
+.logo-color-up:hover,
+.logo-color-up:focus {
+  color: var(--color-logo);
+}
+.logo-up {
   font-family: 'Raleway';
-  color: #000000;
+  color: var(--color-logo);
+}
+.logo-up:hover,
+.logo-up:focus {
+  color: var(--color-link);
+}
+.logo-color-down {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2154px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--color-link);
+}
+.logo-color-down:hover,
+.logo-color-down:focus {
+  color: var(--color-slogan);
+}
+.logo-down {
+  font-family: 'Raleway';
+  color: var(--color-slogan);
+}
+.logo-down:hover,
+.logo-down:focus {
+  color: var(--color-link);
 }
 
 /* menu nav */
-.nav {
-  position: absolute;
-  width: 281px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-.nav-ul {
+.dot {
   list-style: none;
 }
-.nav-li {
-  float: left;
-  padding: 0 10px;
+.nav .link {
+  color: var(--color-general)
 }
-.nav-li :hover,
-.nav-li :focus {
-  color: var(--link-color);
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--color-link);
 }
-.nav-li .current {
-  color: var(--link-color);
+.nav .link.current {
+  color: var(--color-link);
 }
-.decor-studiya {
-  text-decoration: none;
-  color: var(--general-color);
+.contakt .link {
+    color: var(--color-last);
 }
-.decor-portfoliocontakt {
-  text-decoration: none;
-  color: var(--general-color);
+.contakt .link:hover,
+.contakt .link:focus {
+  color: var(--color-link);
+}
+/* button */
+.button {
+  background-color: var(--color-link);
+  color: var(--color-slogan);
 }
 
-/* menu contakt */
-.contakt {
-  list-style: none;
-  position: absolute;
-  width: 300px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
+
+
+
+/* finish */
+.address {
+  color: var(--color-slogan);
 }
-.contakt-li {
-  float: left;
-  padding: 0 10px;
+.address .link {
+  color: var(--color-slogan);
 }
-.contakt-li :hover,
-.contakt-li :focus {
-  color: var(--link-color);
-}
-.decor-email {
-  text-decoration: none;
-  color: var(--last-color);
-}
-.decor-phone {
-  text-decoration: none;
-  color: var(--last-color);
+.address .link:hover,
+address .link:focus {
+  color: var(--color-link);
 }
