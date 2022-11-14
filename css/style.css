@@ -6,14 +6,14 @@
   --color-last: #757575;
   --color-link: #2196f3;
   --color-slogan: #ffffff;
+  --color-button: #F5F4FA;
 }
 
 
 body {
   background-color: var(--background-general);
   color: var(--gcolor-general);
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
 }
 
 /* logotip */
@@ -94,7 +94,16 @@ body {
   color: var(--color-link);
 }
 /* button */
-.button {
+.button-ind {
+  background-color: var(--color-link);
+  color: var(--color-slogan);
+}
+.button-port {
+  background-color: var(--color-button);
+  color: var(--color-general);
+}
+.button-port:hover,
+.button-port:focus {
   background-color: var(--color-link);
   color: var(--color-slogan);
 }
@@ -102,14 +111,18 @@ body {
 
 
 
+
+
 /* finish */
 .address {
-  color: var(--color-slogan);
+  color: var(--color-last);
+  font-style: normal;
 }
 .address .link {
-  color: var(--color-slogan);
+  color: var(--color-last);
+  font-style: normal;
 }
 .address .link:hover,
-address .link:focus {
+.address .link:focus {
   color: var(--color-link);
 }
