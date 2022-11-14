@@ -7,27 +7,21 @@
   --color-link: #2196f3;
   --color-slogan: #ffffff;
   --color-button: #F5F4FA;
+  --color-address-finish: rgba(255, 255, 255, 0.6);
 }
 
 
 body {
   background-color: var(--background-general);
   color: var(--gcolor-general);
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* logotip */
 .logo-color-up {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--color-link);
@@ -37,7 +31,7 @@ body {
   color: var(--color-logo);
 }
 .logo-up {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   color: var(--color-logo);
 }
 .logo-up:hover,
@@ -45,16 +39,9 @@ body {
   color: var(--color-link);
 }
 .logo-color-down {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 2154px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--color-link);
@@ -64,7 +51,7 @@ body {
   color: var(--color-slogan);
 }
 .logo-down {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   color: var(--color-slogan);
 }
 .logo-down:hover,
@@ -78,6 +65,11 @@ body {
 }
 .nav .link {
   color: var(--color-general)
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .nav .link:hover,
 .nav .link:focus {
@@ -88,15 +80,41 @@ body {
 }
 .contakt .link {
     color: var(--color-last);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .contakt .link:hover,
 .contakt .link:focus {
   color: var(--color-link);
 }
+
+/* slogan */
+.slogan {
+  background-color: var(--background-slogan);
+}
+.slogan-titel {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-slogan);
+}
+
 /* button */
 .button-ind {
   background-color: var(--color-link);
   color: var(--color-slogan);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 .button-port {
   background-color: var(--color-button);
@@ -108,21 +126,101 @@ body {
   color: var(--color-slogan);
 }
 
+/* specifical */
+.specifical .titel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-general);
+}
+.specifical .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-last);
+}
 
+/* work */
+.work .titels {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-general);
+}
 
-
-
+/* comand */
+.comand .titels {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-general);
+}
+.comand-titel {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-general);
+}
+.comand-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-last);
+}
 
 /* finish */
+.footer {
+  background-color: var(--background-slogan);
+}
 .address {
-  color: var(--color-last);
+  color: var(--color-slogan);
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 .address .link {
-  color: var(--color-last);
+  color: var(--color-slogan);
   font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--color-address-finish);
 }
 .address .link:hover,
 .address .link:focus {
   color: var(--color-link);
+}
+
+
+/* portfolio */
+.content-titel {
+font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.06em;
+color: var(--color-general);
+}
+.content-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.03em;
+color: var(--color-last);
 }
