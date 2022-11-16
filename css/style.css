@@ -16,7 +16,7 @@
 
 body {
   background-color: var(--background-general);
-  color: var(--gcolor-general);
+  color: var(--color-general);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -150,15 +150,15 @@ body {
   color: var(--color-general);
 }
 .comand .name {
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 16px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--color-general);
 }
 .comand .proff {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-last);
@@ -172,7 +172,7 @@ body {
   color: var(--color-slogan);
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
