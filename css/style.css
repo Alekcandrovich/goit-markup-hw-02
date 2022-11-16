@@ -110,14 +110,14 @@ body {
 }
 
 /* specifical */
-.specifical .titel {
+.specifical .titel-ind {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-general);
 }
-.specifical .text {
+.specifical .text-ind {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -126,7 +126,6 @@ body {
 
 /* work */
 .work .titels {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -188,13 +187,13 @@ body {
 
 
 /* portfolio */
-.content-titel {
+.content .titel-port {
 font-size: 18px;
 line-height: 36px;
 letter-spacing: 0.06em;
 color: var(--color-general);
 }
-.content-text {
+.content .text-port {
 font-size: 16px;
 line-height: 30px;
 letter-spacing: 0.03em;
