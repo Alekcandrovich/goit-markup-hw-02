@@ -102,6 +102,11 @@ body {
   color: var(--color-general);
   cursor: pointer;
   font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .button-port:hover,
 .button-port:focus {
@@ -149,7 +154,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
-  text-transform: uppercase;
   color: var(--color-general);
 }
 .comand .proff {
@@ -176,7 +180,7 @@ body {
   color: var(--color-slogan);
   text-decoration: none;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-address-finish);
 }
@@ -189,13 +193,13 @@ body {
 /* portfolio */
 .content .titel-port {
 font-size: 18px;
-line-height: 36px;
+line-height: 2;
 letter-spacing: 0.06em;
 color: var(--color-general);
 }
 .content .text-port {
 font-size: 16px;
-line-height: 30px;
+line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--color-last);
 }
