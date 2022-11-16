@@ -1,13 +1,16 @@
 :root{
   --background-general: #FFFFFF;
   --background-slogan: #2F303A;
+  --background-comand: #F5F4FA;
   --color-logo: #000000;
   --color-general: #212121;
   --color-last: #757575;
   --color-link: #2196f3;
   --color-slogan: #ffffff;
   --color-button: #F5F4FA;
+  --color-button-activ :#188CE8;
   --color-address-finish: rgba(255, 255, 255, 0.6);
+  --color-shadow: rgba(0, 0, 0, 0.15);
 }
 
 
@@ -18,45 +21,19 @@ body {
 }
 
 /* logotip */
-.logo-color-up {
+.logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--color-link)
 }
-.logo-color-up:hover,
-.logo-color-up:focus {
+.logo .up {
   color: var(--color-logo);
 }
-.logo-up {
-  font-family: 'Raleway', sans-serif;
-  color: var(--color-logo);
-}
-.logo-up:hover,
-.logo-up:focus {
-  color: var(--color-link);
-}
-.logo-color-down {
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--color-link);
-}
-.logo-color-down:hover,
-.logo-color-down:focus {
+.logo .down {
   color: var(--color-slogan);
-}
-.logo-down {
-  font-family: 'Raleway', sans-serif;
-  color: var(--color-slogan);
-}
-.logo-down:hover,
-.logo-down:focus {
-  color: var(--color-link);
 }
 
 /* menu nav */
@@ -64,8 +41,8 @@ body {
   list-style: none;
 }
 .nav .link {
-  color: var(--color-general)
-  font-style: normal;
+  color: var(--color-general);
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -80,7 +57,6 @@ body {
 }
 .contakt .link {
     color: var(--color-last);
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -97,7 +73,6 @@ body {
   background-color: var(--background-slogan);
 }
 .slogan-titel {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -111,14 +86,22 @@ body {
 .button-ind {
   background-color: var(--color-link);
   color: var(--color-slogan);
-  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px var(--color-shadow);
+}
+.button-ind:hover,
+.button-ind:focus {
+  background-color: var(--color-button-activ);
 }
 .button-port {
   background-color: var(--color-button);
   color: var(--color-general);
+  cursor: pointer;
+  font-family: inherit;
 }
 .button-port:hover,
 .button-port:focus {
@@ -128,8 +111,6 @@ body {
 
 /* specifical */
 .specifical .titel {
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -137,7 +118,6 @@ body {
   color: var(--color-general);
 }
 .specifical .text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -155,16 +135,17 @@ body {
 }
 
 /* comand */
+.comand {
+  background-color: var(--background-comand);
+}
 .comand .titels {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-general);
 }
-.comand-titel {
-  font-weight: 700;
+.comand .name {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -172,8 +153,7 @@ body {
   text-transform: uppercase;
   color: var(--color-general);
 }
-.comand-text {
-  font-weight: 400;
+.comand .proff {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -188,16 +168,14 @@ body {
 .address {
   color: var(--color-slogan);
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .address .link {
   color: var(--color-slogan);
-  font-style: normal;
   text-decoration: none;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -211,14 +189,12 @@ body {
 
 /* portfolio */
 .content-titel {
-font-weight: 700;
 font-size: 18px;
 line-height: 36px;
 letter-spacing: 0.06em;
 color: var(--color-general);
 }
 .content-text {
-font-weight: 400;
 font-size: 16px;
 line-height: 30px;
 letter-spacing: 0.03em;
